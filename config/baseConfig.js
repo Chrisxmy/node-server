@@ -1,4 +1,6 @@
 module.exports = {
+    host: '127.0.0.1',
+    port:'8486',
     root: process.cwd(),
     compress: /\.(html|css|js|md)$/,
     cache: {

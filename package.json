@@ -1,5 +1,29 @@
 {
-  "devDependencies": {
-    "ejs": "^2.5.7"
+  "name": "smallmoon",
+  "version": "1.0.0",
+  "description": "node static server",
+  "main": "index.js",
+  "bin": {
+    "smallmoon": "bin/smallmoon"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chrisxmy/node-server.git"
+  },
+  "author": "shel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chrisxmy/node-server/issues"
+  },
+  "homepage": "https://github.com/Chrisxmy/node-server#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "yargs": "^11.0.0"
   }
 }

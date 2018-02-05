@@ -1,11 +1,20 @@
-var app = require("../app");
+const app = require("../app");
 
 const http = require("http");
 
+const baseConfig = require("../config/baseConfig.js");
 
+class Server {
+  constructor(config) {
+    this.conf = Object.assign({}, baseConfig, config);
+  }
+  start() {
+    let server = http.createServer(app);
 
-let server = http.createServer(app);
+    server.listen(this.conf.port,this.conf.host);
 
-server.listen(8486);
+    console.log(`open ${this.conf.host}:${this.conf.port}`);
+  }
+}
 
-console.log("open localhost:8486");
+module.exports = Server

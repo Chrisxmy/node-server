@@ -7,6 +7,7 @@ var fs = require('fs')
 
 var app = express()
 
+
 app.use(bodyParser)
 
 app.use(view('static',path.join(__dirname, 'static')))
