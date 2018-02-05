@@ -10,6 +10,9 @@ var app = express()
 
 app.use(bodyParser)
 
+
+/** 配置中间件 */
+
 app.use(view('static',path.join(__dirname, 'static')))
 
 

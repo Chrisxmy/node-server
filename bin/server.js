@@ -3,6 +3,7 @@ const app = require("../app");
 const http = require("http");
 
 const baseConfig = require("../config/baseConfig.js");
+const openUrl = require('../lib/openUrl.js')
 
 class Server {
   constructor(config) {
@@ -10,10 +11,11 @@ class Server {
   }
   start() {
     let server = http.createServer(app);
-
     server.listen(this.conf.port,this.conf.host);
-
-    console.log(`open ${this.conf.host}:${this.conf.port}`);
+    let url = `http://${this.conf.host}:${this.conf.port}`
+    
+    console.log(`open ${url}`);
+    openUrl(url)
   }
 }
 
