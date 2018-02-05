@@ -15,7 +15,7 @@ class Server {
     let url = `http://${this.conf.host}:${this.conf.port}`
     
     console.log(`open ${url}`);
-    openUrl(url)
+
   }
 }
 
