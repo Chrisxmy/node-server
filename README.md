@@ -4,7 +4,7 @@ node静态资源服务器(低仿express)
 
 ## 安装
 
-npm i smallmoon -g
+git clone git@github.com:Chrisxmy/node-server.git
 
 ## 使用
 

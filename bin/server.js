@@ -13,7 +13,7 @@ class Server {
     let server = http.createServer(app);
     server.listen(this.conf.port,this.conf.host);
     let url = `http://${this.conf.host}:${this.conf.port}`
-    
+    openUrl(url)
     console.log(`open ${url}`);
 
   }
